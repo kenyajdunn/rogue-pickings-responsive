@@ -3,10 +3,6 @@ html {
 }
 body {
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow: row wrap;
 	font-size: 1em;
 }
 
@@ -17,6 +13,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-flow: row wrap;
+	margin: 0 auto;
 	
 }
 
@@ -45,7 +42,6 @@ p {
 
 /*The widths are in a percentage!*/
 header {
-	border-bottom: 3px solid #77a466;
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
@@ -56,10 +52,9 @@ header {
 
 header h1 {
 	margin: 0;
+	border-bottom: 3px solid #77a466;
 	padding: 38px 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	text-align: center;
 	width: 100%;
 }
 header h1 span {
@@ -72,6 +67,7 @@ header nav {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	line-height: 20px;
 }
 header nav ul {
 	margin: 0;
@@ -83,7 +79,7 @@ header nav ul li {
 	font-size: 14px;
 	padding: 0 10px;
 	display: flex;
-	line-height: 40px;
+	line-height: 30px;
 }
 header nav ul li a{
 	text-decoration: none;
@@ -103,12 +99,14 @@ header nav ul li a{
 .main-image {
 	width: 100%;
 }
+
 .main-image img {
 	width: 100%;
 	border-bottom: 3px solid #77a466;
 }
 
 .main-title {
+	height: auto;
 
 }
 .main-title h2 {
@@ -130,7 +128,7 @@ header nav ul li a{
 
 .section-one h3,
 .section-one ul {
-	padding: 0px 30px;
+	padding: 10px 0
 }
 
 
@@ -138,7 +136,7 @@ header nav ul li a{
 
 .section-two h3,
 .section-three h3 {
-	padding: 0px 30px;
+	padding: 10px 30px;
 }
 
 .menu {
@@ -182,3 +180,11 @@ footer span {
 
 /*** Media Queries for Responsive Sites***/
 
+@media screen and (min-width: 700px) {
+	.nav ul {
+		float: right;
+		display: block;
+		text-align: center;
+	}
+
+}
