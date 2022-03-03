@@ -68,6 +68,7 @@ header nav {
 	justify-content: center;
 	align-items: center;
 	line-height: 20px;
+	list-style-type: none;
 }
 header nav ul {
 	margin: 0;
@@ -128,7 +129,7 @@ header nav ul li a{
 
 .section-one h3,
 .section-one ul {
-	padding: 10px 0
+	padding: 0 0
 }
 
 
@@ -136,7 +137,7 @@ header nav ul li a{
 
 .section-two h3,
 .section-three h3 {
-	padding: 10px 30px;
+	padding: 0 0;
 }
 
 .menu {
@@ -151,12 +152,14 @@ header nav ul li a{
 .reviews {
 	color: #333;
 	font-size: 16px;
-	line-height: 21px;
+	line-height: 21px; 
+	padding: 0 0;
 }
 
 .address {
 	font-size: 16px;
 	line-height: 24px;
+	padding: 0;
 }
 
 /*The widths are in a percentage!*/
@@ -180,11 +183,3 @@ footer span {
 
 /*** Media Queries for Responsive Sites***/
 
-@media screen and (min-width: 700px) {
-	.nav ul {
-		float: right;
-		display: block;
-		text-align: center;
-	}
-
-}
