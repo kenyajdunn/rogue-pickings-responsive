@@ -183,3 +183,12 @@ footer span {
 
 /*** Media Queries for Responsive Sites***/
 
+@media screen and (min-width: 1200px) {
+	html {
+		background-color: purple;
+	}
+
+	nav ul {
+		float: right;
+	}
+}
