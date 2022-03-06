@@ -64,9 +64,6 @@ header h1 span {
 header nav {
 	padding: 46px 0;
 	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	line-height: 20px;
 	list-style-type: none;
 }
@@ -183,12 +180,28 @@ footer span {
 
 /*** Media Queries for Responsive Sites***/
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
 	html {
 		background-color: purple;
 	}
 
+	header nav,
+	header h1 {
+		width: 50%;
+		justify-content: space-between;
+		border-bottom: none;
+
+	}
+ 
 	nav ul {
-		float: right;
+		float: left;
+		display: flex;
+	}
+
+	.bottom-section {
+		width: 33.3%;
+		flex-grow: inherit;
+		flex-direction: row;
+		justify-content: space-between;
 	}
 }
