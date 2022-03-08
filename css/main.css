@@ -13,7 +13,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-flow: row wrap;
-	margin: auto;
+	margin: 0 auto;
 	
 }
 
@@ -76,7 +76,7 @@ header nav ul li {
 	font-weight: 700;
 	font-size: 14px;
 	padding: 0 10px;
-	display: flex;
+	text-align: center;
 	line-height: 30px;
 }
 header nav ul li a{
