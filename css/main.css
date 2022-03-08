@@ -181,7 +181,7 @@ footer span {
 
 /*** Media Queries for Responsive Sites***/
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1020px) {
 	header nav,
 	header h1 {
 		width: 50%;
@@ -191,6 +191,7 @@ footer span {
 		text-align: left;
 
 	}
+
  
 	nav ul {
 		float: right;
@@ -215,4 +216,26 @@ footer span {
 	}
 
 
+
+}
+
+@media screen and (min-width: 768px) {
+	
+	.bottom-section {
+		width: 32%;
+		flex-direction: row;
+	}
+
+	.section-one,
+	.section-two,
+	.section-three {
+		flex: none;
+		padding: 10px;
+	}
+
+	.section-two {
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+	}
+	
 }
